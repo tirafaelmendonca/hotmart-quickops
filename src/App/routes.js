@@ -2,7 +2,12 @@ import Solicitation from './Solicitation';
 import Panel from './Panel';
 
 const Routes = [
-	{ simplePath: 'panel', name: 'Painel', path: '/panel', component: Panel },
+	{
+		simplePath: 'panel',
+		name: 'Painel',
+		path: '/panel',
+		component: Panel
+	},
 	{
 		simplePath: 'solicitation',
 		name: 'Solicitação',

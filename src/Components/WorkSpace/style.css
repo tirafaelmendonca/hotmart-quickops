@@ -1,0 +1,10 @@
+.space {
+	display: flex;
+}
+
+.work {
+	min-height: 1245px;
+	background-color: #f4f6fa;
+	flex-direction: column;
+	flex-grow: 1;
+}
