@@ -1,0 +1,17 @@
+.solicitation {
+	display: flex;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.core {
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+}
+
+.side {
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	background-color: #ffffff;
+}

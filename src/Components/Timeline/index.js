@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
-import CardTimeLineExpense from '../CardTimeline/Expense';
-import CardTimeLineEvaluation from '../CardTimeline/Evaluation';
-import CardTimeLineAccountability from '../CardTimeline/Accountability';
+import CardTimeLineExpense from './Card/Expense';
+import CardTimeLineEvaluation from './Card/Evaluation';
+import CardTimeLineAccountability from './Card/Accountability';
 
 import './style.css';
 

@@ -27,6 +27,7 @@
 	flex-direction: column;
 	width: 30%;
 	padding: 30px;
+	justify-content: center;
 }
 
 .cost-center-title {
