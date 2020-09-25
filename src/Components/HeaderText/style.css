@@ -1,0 +1,21 @@
+.text {
+	display: flex;
+	margin-bottom: 12px;
+	font-size: 14px;
+}
+
+.left-text {
+	display: flex;
+	flex-direction: column;
+	width: 90px;
+	align-items: flex-end;
+}
+
+.rigth-text {
+	display: flex;
+	flex-direction: column;
+	font-weight: bold;
+	align-items: flex-start;
+	padding-left: 30px;
+	padding-right: 30px;
+}

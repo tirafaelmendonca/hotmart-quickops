@@ -13,8 +13,8 @@ const App = () => {
 						{Routes.map((route, index) => {
 							return <Route key={index} path={route.path} exact component={route.component} />;
 						})}
+						<Route exact path='/' render={() => <Redirect to='/panel/solicitation' />} />
 					</WorkSpace>
-					<Redirect to='/panel/solicitation' />
 				</Switch>
 			</BrowserRouter>
 		</div>
