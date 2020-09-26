@@ -39,6 +39,20 @@ export default {
 		assignAnalyst: 'Assign Analyst',
 		costCenter: 'Centro de Custo',
 		panel: 'Painel',
-		solicitacao: 'Solicitação'
+		solicitacao: 'Solicitação',
+		youCanInsertFiles:
+			'Você pode inserir arquivos nos formatos PNG, JPG ou PDF. Tamanho máx. 10 MB',
+		sendTheReceipt: 'Envie o comprovante',
+		chooseFile: 'Escolher arquivo',
+		chooseAnOption: 'Escolha uma opção',
+		food: 'Alimentação',
+		transport: 'Transporte',
+		BRL: 'Real',
+		USD: 'Dolar',
+		MXN: 'Peso mexicano',
+		requiredField: 'Campo Obrigatório',
+		add_expense: 'Adicionar Despesa',
+		expenseSuccessfullySaved: 'Despesa salva com Sucesso!',
+		value: 'Valor'
 	}
 };

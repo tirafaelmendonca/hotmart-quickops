@@ -3,13 +3,19 @@ import ReactDOM from 'react-dom';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import App from './app';
 import { I18nextProvider } from 'react-i18next';
-import { i18n } from './Locales';
+import { i18n } from './locales';
 import './style.css';
 
 const theme = createMuiTheme({
 	typography: {
 		fontFamily: "'Nunito Sans', sans-serif",
 		color: '#545b64'
+	},
+	palette: {
+		primary: {
+			main: '#51c1c3',
+			contrastText: '#ffffff'
+		}
 	},
 	overrides: {
 		MuiTypography: {
@@ -42,11 +48,6 @@ const theme = createMuiTheme({
 			colorDefault: {
 				color: '#fafafa',
 				backgroundColor: '#f0f3f7'
-			}
-		},
-		MuiInputBase: {
-			input: {
-				backgroundColor: '#ffffff'
 			}
 		},
 		MuiOutlinedInput: {

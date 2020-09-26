@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Avatar, Chip, Card } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faUsers } from '@fortawesome/free-solid-svg-icons';
-import { translate } from '../../../../Locales';
+import { translate } from '../../../../locales';
 import './style.css';
 
 const CardevaluationEvaluation = ({ data }) => {

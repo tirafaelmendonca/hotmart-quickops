@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
-import CardTimeLineExpense from './Card/Expense';
-import CardTimeLineEvaluation from './Card/Evaluation';
-import CardTimeLineAccountability from './Card/Accountability';
+import CardTimeLineExpense from './card/expense';
+import CardTimeLineEvaluation from './card/evaluation';
+import CardTimeLineAccountability from './card/accountability';
 
 import './style.css';
 
@@ -20,12 +20,12 @@ const Timeline = ({ data }) => {
 	};
 
 	return (
-		<Fragment>
+		<div className='timeline'>
 			{data &&
 				data.map((item, key) => {
 					return <Fragment>{getCardTimeLine(item, key)}</Fragment>;
 				})}
-		</Fragment>
+		</div>
 	);
 };
 

@@ -3,8 +3,8 @@ import { Avatar, Chip, Card, Select } from '@material-ui/core';
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faConciergeBell, faReceipt, faUtensils } from '@fortawesome/free-solid-svg-icons';
-import formatCurrency from '../../../SideBar/Balance/Statement/currency';
-import { translate } from '../../../../Locales';
+import formatCurrency from '../../../sideBar/balance/statement/currency';
+import { translate } from '../../../../locales';
 
 const CardexpenseExpense = ({ data }) => {
 	return (
@@ -25,18 +25,24 @@ const CardexpenseExpense = ({ data }) => {
 						</div>
 						<div className='expense-type'>
 							<div className='expense-title'>{translate('type_capital')}</div>
-							<div className='expense-text'>
-								{translate(data.expenseTypeCode.replace('-', '_'))}
-							</div>
+							<div className='expense-text'>{translate(data.expenseTypeCode)}</div>
 						</div>
 						<div className='expense-value'>
 							<div className='expense-title'>{translate('value_capital')}</div>
 							<div className='expense-text'>
-								{formatCurrency(data.amountSpent, data.currencyCode, data.currencySymbol)}
+								{formatCurrency(
+									data.amountSpent,
+									data.currencyCode,
+									data.currencySymbol ? data.currencySymbol : ''
+								)}
 							</div>
 							<div className='expense-sub-text'>
 								{translate('invoiceAmount')}
-								{formatCurrency(data.amountSpent, data.currencyCode, data.currencySymbol)}
+								{formatCurrency(
+									data.amountSpent,
+									data.currencyCode,
+									data.currencySymbol ? data.currencySymbol : ''
+								)}
 							</div>
 						</div>
 						<div className='expense-status'>

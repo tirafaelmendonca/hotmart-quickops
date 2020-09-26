@@ -1,9 +1,12 @@
-import Breadcrumbs from './Layout/Breadcrumbs';
-import Header from './Header';
-import Menu from './Layout/Menu';
-import TopBar from './Layout/TopBar';
-import WorkSpace from './Layout/WorkSpace';
-import SideBar from './SideBar';
-import Timeline from './Timeline';
+import Breadcrumbs from './layout/breadcrumbs';
+import Header from './header';
+import Menu from './layout/menu';
+import TopBar from './layout/topBar';
+import WorkSpace from './layout/workSpace';
+import SideBar from './sideBar';
+import Timeline from './timeline';
+import Input from './form/input';
+import Select from './form/select';
+import Upload from './form/upload';
 
-export { Breadcrumbs, Header, Menu, TopBar, WorkSpace, SideBar, Timeline };
+export { Breadcrumbs, Header, Menu, TopBar, WorkSpace, SideBar, Timeline, Input, Select, Upload };

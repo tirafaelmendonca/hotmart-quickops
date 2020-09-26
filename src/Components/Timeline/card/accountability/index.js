@@ -3,7 +3,7 @@ import { Avatar, Card } from '@material-ui/core';
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAsterisk } from '@fortawesome/free-solid-svg-icons';
-import { translate } from '../../../../Locales';
+import { translate } from '../../../../locales';
 
 const CardaccountabilityAccountability = ({ data }) => {
 	return (

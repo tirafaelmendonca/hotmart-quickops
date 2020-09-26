@@ -1,10 +1,10 @@
 import React from 'react';
 import { faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
-import Values from './Values';
-import Statement from './Statement';
+import Values from './values';
+import Statement from './statement';
 import './style.css';
-import formatCurrency from './Statement/currency';
-import { translate } from '../../../Locales';
+import formatCurrency from './statement/currency';
+import { translate } from '../../../locales';
 
 const Balance = ({ data }) => (
 	<div className='balance'>

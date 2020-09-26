@@ -1,8 +1,8 @@
 import React, { Fragment, useState } from 'react';
 import { Card as CardMUI, Select } from '@material-ui/core';
-import Text from './Text';
+import Text from './text';
+import { translate } from '../../locales';
 import './style.css';
-import { translate } from '../../Locales';
 
 const Header = ({ data }) => {
 	const [

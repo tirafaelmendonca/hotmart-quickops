@@ -1,8 +1,8 @@
 import React from 'react';
 import { Breadcrumbs as BreadcrumbsMUI, Link } from '@material-ui/core';
 import { useLocation } from 'react-router-dom';
-import Routes from '../../../App/routes';
-import { translate } from '../../../Locales';
+import Routes from '../../../routes';
+import { translate } from '../../../locales';
 import './style.css';
 
 const Breadcrumbs = () => {

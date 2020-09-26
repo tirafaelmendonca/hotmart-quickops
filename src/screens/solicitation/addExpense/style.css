@@ -1,0 +1,53 @@
+.add-expense-form {
+	display: flex;
+	flex-direction: column;
+	padding: 24px;
+	margin-bottom: 0px !important;
+}
+
+.add-expense-form #title {
+	color: #353a40;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 24px;
+}
+
+.add-expense-form #content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.add-expense-form #form {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.add-expense-form #form-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.add-expense-form #actions {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-top: 24px;
+}
+
+.add-expense-form #cancel {
+	text-transform: none;
+}
+
+.add-expense-form #save {
+	margin-left: 12px;
+	text-transform: none;
+}
+
+.alert {
+	margin-bottom: 0px !important;
+	background-color: #e6fff0 !important;
+	border: solid 1px #03a046 !important;
+}

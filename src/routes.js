@@ -1,4 +1,4 @@
-import { Solicitation, Panel } from './Screens';
+import { Solicitation, Panel } from './screens';
 
 const Routes = [
 	{

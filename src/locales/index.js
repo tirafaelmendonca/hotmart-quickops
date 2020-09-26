@@ -21,6 +21,6 @@ i18n.use(LanguageDetector).init({
 	}
 });
 
-const translate = key => i18n.t(key);
+const translate = key => i18n.t(key.replace('-', '_'));
 
 export { i18n, translate };

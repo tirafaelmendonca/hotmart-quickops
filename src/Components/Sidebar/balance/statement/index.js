@@ -1,7 +1,7 @@
 import React from 'react';
-import { translate } from '../../../../Locales';
+import { translate } from '../../../../locales';
 import formatCurrency from './currency';
-import StatementItem from './StatementItem';
+import StatementItem from './statementItem';
 import './style.css';
 
 const Statement = ({ data }) => {

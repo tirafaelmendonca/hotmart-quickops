@@ -1,6 +1,6 @@
 import React from 'react';
-import Balance from './Balance';
-import Status from './Status';
+import Balance from './balance';
+import Status from './status';
 import './style.css';
 
 const SideBar = ({ data }) => {
