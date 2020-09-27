@@ -17,7 +17,7 @@ const Select = ({ label, name, data, formik }) => {
 				variant='outlined'
 				error={formik.submitCount > 0 && formik.errors[name]}
 			>
-				<option value={'empty'}>{translate('chooseAnOption')}</option>
+				<option value='empty'>{translate('chooseAnOption')}</option>
 				{data.map((item, key) => (
 					<option key={key} value={item}>
 						{translate(item)}

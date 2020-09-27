@@ -7,10 +7,11 @@ const api = axios.create({
 
 const httpRequest = async (_method, url, data, config) => {
 	try {
-		let response = await api({ method: _method, url, data, config });
+		const response = await api({ method: _method, url, data, config });
 		return response.data;
 	} catch (error) {
 		console.log(error);
+		return '';
 	}
 };
 

@@ -16,13 +16,13 @@ const AddExpense = ({ cancel, formik }) => {
 						<div id='form'>
 							<div id='form-row'>
 								<Select
-									label={translate('type') + ' *'}
+									label={`${translate('type')} *`}
 									data={EXPENSE_TYPE_CODE}
 									name='expenseTypeCode'
 									formik={formik}
 								/>
 								<Select
-									label={translate('currency') + ' *'}
+									label={`${translate('currency')} *`}
 									name='currencyCode'
 									data={CURRENCY_CODE}
 									formik={formik}
@@ -30,12 +30,12 @@ const AddExpense = ({ cancel, formik }) => {
 							</div>
 							<div id='form-row'>
 								<Input
-									label={translate('expenseDescription') + ' *'}
+									label={`${translate('expenseDescription')} *`}
 									name='notes'
 									formik={formik}
 								/>
 								<Input
-									label={translate('totalValueOfTheNoteCoupon') + ' *'}
+									label={`${translate('totalValueOfTheNoteCoupon')} *`}
 									name='amountSpent'
 									formik={formik}
 									type='number'
@@ -43,13 +43,13 @@ const AddExpense = ({ cancel, formik }) => {
 							</div>
 							<div id='form-row'>
 								<Input
-									label={translate('voucherDate') + ' *'}
+									label={`${translate('voucherDate')} *`}
 									name='cardDate'
 									formik={formik}
 									type='date'
 								/>
 								<Input
-									label={translate('valueToBeConsidered') + ' *'}
+									label={`${translate('valueToBeConsidered')} *`}
 									name='amountTotal'
 									formik={formik}
 									type='number'

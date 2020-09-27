@@ -6,7 +6,7 @@ import { translate } from '$/locales';
 import './style.css';
 
 const Panel = () => {
-	let history = useHistory();
+	const history = useHistory();
 
 	const goToSolicitation = () => {
 		history.push('/panel/solicitation');

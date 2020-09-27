@@ -1,14 +1,14 @@
 import React, { Fragment } from 'react';
 import { Card as CardMUI, Select } from '@material-ui/core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { translate } from '$/locales';
 import { ANALIST } from '$/utils/constants';
 import Text from './text';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './style.css';
 
 const Header = ({ data, analist, setAnalist }) => {
 	const getPeople = people => {
-		return people === 1 ? translate('people') : translate('peoples');
+		return people === 1 ? people + translate('people') : people + translate('peoples');
 	};
 
 	return (
@@ -17,7 +17,7 @@ const Header = ({ data, analist, setAnalist }) => {
 				<Fragment>
 					<div id='title'>
 						<div id='text'>
-							{translate('reimbursement')} #{data.id} - {data.justification}
+							{translate('refund')} #{data.id} - {data.justification}
 						</div>
 						<div id='edit'>
 							<FontAwesomeIcon id='icon' icon='edit' />
@@ -36,11 +36,7 @@ const Header = ({ data, analist, setAnalist }) => {
 							/>
 							<Text
 								leftText={translate('amount')}
-								rigthText={
-									data.accountabilityExtraInfo.amountOfPeople +
-									' ' +
-									getPeople(data.accountabilityExtraInfo.amountOfPeople)
-								}
+								rigthText={getPeople(data.accountabilityExtraInfo.amountOfPeople)}
 							/>
 							<Text
 								leftText={translate('includesBreakfast')}
@@ -62,7 +58,7 @@ const Header = ({ data, analist, setAnalist }) => {
 								variant='outlined'
 								className='assign-analyst'
 							>
-								<option value={'empty'}>{translate('chooseAnOption')}</option>
+								<option value='empty'>{translate('chooseAnOption')}</option>
 								{ANALIST.map((item, key) => (
 									<option key={key} value={item}>
 										{item}

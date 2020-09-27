@@ -16,7 +16,7 @@ export default {
 		returned: 'Gasto',
 		received: 'Recebeu',
 		statement: 'Extrato',
-		description: 'Description',
+		description: 'Descrição',
 		declaredExpenditure: 'Despesas declaradas',
 		expenditureDeclaredByTheTrooper: 'Despesas declaradas pelo trooper',
 		approvedExpenses: 'Despesas aprovadas',
@@ -26,7 +26,7 @@ export default {
 		reimbursement: 'Reembolso',
 		name: 'Nome',
 		email: 'E-mail',
-		justification: 'Justification',
+		justification: 'Justificativa',
 		finality: 'Finalidade',
 		project: 'Projeto',
 		date: 'Data',
@@ -62,7 +62,8 @@ export default {
 		valueToBeConsidered: 'Valor a ser considerado',
 		cancel: 'Cancelar',
 		save: 'Salvar',
-		assignAnalyst: 'Escolher Analista',
-		solicitation: 'Solicitação'
+		assignAnalyst: 'Atribuir Analista',
+		solicitation: 'Solicitação',
+		OPEN: 'Aguardando Financeiro'
 	}
 };

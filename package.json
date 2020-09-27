@@ -12,6 +12,7 @@
 		"@testing-library/jest-dom": "^4.2.4",
 		"@testing-library/react": "^9.3.2",
 		"@testing-library/user-event": "^7.1.2",
+		"@typescript-eslint/parser": "^4.2.0",
 		"axios": "^0.20.0",
 		"babel-plugin-root-import": "^6.1.0",
 		"customize-cra": "^0.8.0",
@@ -19,21 +20,22 @@
 		"i18next": "^19.7.0",
 		"i18next-browser-languagedetector": "^6.0.1",
 		"react": "^16.13.1",
-		"react-dom": "^16.13.1",
-		"react-hook-form": "^6.8.6",
-		"react-i18next": "^11.7.3",
-		"react-router-dom": "^5.2.0",
-		"react-scripts": "3.4.3",
-		"yup": "^0.27.0",
 		"react-app-rewire-hot-loader": "^2.0.1",
 		"react-app-rewire-hot-loader-for-customize-cra": "^1.0.1",
 		"react-app-rewired": "^2.1.4",
+		"react-dom": "^16.13.1",
+		"react-hook-form": "^6.8.6",
 		"react-hot-loader": "^4.12.15",
-		"rimraf": "^3.0.0"
+		"react-i18next": "^11.7.3",
+		"react-router-dom": "^5.2.0",
+		"react-scripts": "3.4.3",
+		"rimraf": "^3.0.0",
+		"yup": "^0.27.0"
 	},
 	"scripts": {
 		"start": "rimraf ./build && react-app-rewired start",
-		"build": "react-app-rewired build"
+		"build": "react-app-rewired build",
+		"lint": "eslint ."
 	},
 	"eslintConfig": {
 		"extends": "react-app"
@@ -49,5 +51,19 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
+	},
+	"devDependencies": {
+		"eslint-config-prettier": "^6.12.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"prettier": "^2.1.2",
+		"eslint": "^6.1.0",
+		"eslint-cli": "^1.1.1",
+		"eslint-config-airbnb": "^17.1.0",
+		"eslint-config-react-app": "^2.1.0",
+		"eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
+		"eslint-plugin-flowtype": "^2.50.3",
+		"eslint-plugin-import": "^2.17.2",
+		"eslint-plugin-jsx-a11y": "^6.2.3",
+		"eslint-plugin-react": "^7.13.0"
 	}
 }

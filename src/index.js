@@ -3,9 +3,6 @@ import ReactDOM from 'react-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { I18nextProvider } from 'react-i18next';
-import App from '$/app';
-import { i18n } from '$/locales';
-import theme from '$/theme';
 import {
 	faAngleDown,
 	faAsterisk,
@@ -18,6 +15,9 @@ import {
 	faUsers,
 	faUtensils
 } from '@fortawesome/free-solid-svg-icons';
+import App from '$/app';
+import { i18n } from '$/locales';
+import theme from '$/theme';
 import './style.css';
 
 library.add(

@@ -22,9 +22,9 @@ const CardaccountabilityAccountability = ({ data }) => {
 							<div id='title'>{translate('type_capital')}</div>
 							<div id='text'>
 								{data.cardType === 'ACCOUNTABILITY_SUBMITTED' &&
-									translate('expensesSentForApprovalBy') + ' ' + data.author.name}
+									`${translate('expensesSentForApprovalBy')} ${data.author.name}`}
 								{data.cardType === 'ACCOUNTABILITY_CREATED' &&
-									translate('requestCompletedBy') + ' ' + data.author.name}
+									`${translate('requestCompletedBy')} ${data.author.name}`}
 							</div>
 						</div>
 					</div>

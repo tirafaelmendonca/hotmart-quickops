@@ -6,12 +6,12 @@ import { translate } from '$/locales';
 import './style.css';
 
 const Breadcrumbs = () => {
-	let location = useLocation();
-	let paths = location.pathname.split('/').filter(path => path !== '');
+	const location = useLocation();
+	const paths = location.pathname.split('/').filter(path => path !== '');
 
 	const generateLink = (path, index) => {
-		let route = Routes.find(route => route.simplePath === path);
-		let color = index !== paths.length - 1 ? 'textSecondary' : 'textPrimary';
+		const route = Routes.find(x => x.simplePath === path);
+		const color = index !== paths.length - 1 ? 'textSecondary' : 'textPrimary';
 
 		return (
 			<Link color={color} href={route.path}>

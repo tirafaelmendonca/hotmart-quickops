@@ -9,7 +9,7 @@ const Routes = [
 	},
 	{
 		simplePath: 'solicitation',
-		name: 'solicitacao',
+		name: 'solicitation',
 		path: '/panel/solicitation',
 		component: Solicitation
 	}

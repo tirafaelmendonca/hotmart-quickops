@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { Button, IconButton } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Header, Timeline, SideBar } from '$/components';
 import { Alert } from '@material-ui/lab';
 import CloseIcon from '@material-ui/icons/Close';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { Header, Timeline, SideBar } from '$/components';
+import { sort } from '$/utils/array';
 import { translate } from '$/locales';
 import { getHeader, getTimeline, getSidebar, addExpense } from '$/services/solicitation';
 import AddExpense from './addExpense';
 import './style.css';
-import { sort } from '$/utils/array';
 
 const Solicitation = () => {
 	const [
@@ -45,22 +45,22 @@ const Solicitation = () => {
 
 	useEffect(() => {
 		const fetchData = async () => {
-			let header = await getHeader();
-			setHeader(header);
+			const resultHeader = await getHeader();
+			setHeader(resultHeader);
 
-			let timeline = await getTimeline();
-			setTimeline(sort(timeline.content, 'cardDate'));
+			const resultTimeline = await getTimeline();
+			setTimeline(sort(resultTimeline.content, 'cardDate'));
 
-			let sidebar = await getSidebar();
-			setSidebar(sidebar.content);
+			const resultSidebar = await getSidebar();
+			setSidebar(resultSidebar.content);
 		};
 		fetchData();
 	}, []);
 
 	const save = async () => {
-		let payload = { ...formik.values, cardDate: new Date(formik.values.cardDate).getTime() };
+		const payload = { ...formik.values, cardDate: new Date(formik.values.cardDate).getTime() };
 
-		let result = await addExpense(payload);
+		const result = await addExpense(payload);
 		console.log(result);
 		timeline.push(result);
 		sort(timeline, 'cardDate');
