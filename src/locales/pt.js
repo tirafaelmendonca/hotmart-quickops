@@ -36,7 +36,6 @@ export default {
 		includesBreakfast: 'Inclui café da manhã',
 		yes: 'Sim',
 		no: 'Não',
-		assignAnalyst: 'Assign Analyst',
 		costCenter: 'Centro de Custo',
 		panel: 'Painel',
 		solicitacao: 'Solicitação',
@@ -53,6 +52,17 @@ export default {
 		requiredField: 'Campo Obrigatório',
 		add_expense: 'Adicionar Despesa',
 		expenseSuccessfullySaved: 'Despesa salva com Sucesso!',
-		value: 'Valor'
+		value: 'Valor',
+		newExpense: 'Nova despesa',
+		type: 'Tipo',
+		currency: 'Moeda',
+		expenseDescription: 'Descrição da despesa',
+		totalValueOfTheNoteCoupon: 'Valor total da nota/cupom',
+		voucherDate: 'Data do comprovante',
+		valueToBeConsidered: 'Valor a ser considerado',
+		cancel: 'Cancelar',
+		save: 'Salvar',
+		assignAnalyst: 'Escolher Analista',
+		solicitation: 'Solicitação'
 	}
 };

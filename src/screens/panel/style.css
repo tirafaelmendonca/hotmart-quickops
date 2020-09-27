@@ -1,0 +1,19 @@
+.panel {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.panel #button {
+	margin-top: 100px;
+	color: #6b7480 !important;
+	border: 1px solid #6b7480 !important;
+	text-transform: none !important;
+}
+
+.panel #icon {
+	color: #6b7480 !important;
+	padding-right: 12px;
+}

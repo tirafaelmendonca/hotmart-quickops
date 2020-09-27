@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { Header, Timeline, SideBar } from '../../components';
-import './style.css';
-import axios from 'axios';
 import { Button, IconButton } from '@material-ui/core';
-import { faReceipt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import AddExpense from './addExpense';
+import { Header, Timeline, SideBar } from '$/components';
 import { Alert } from '@material-ui/lab';
 import CloseIcon from '@material-ui/icons/Close';
-import { translate } from '../../locales';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { translate } from '$/locales';
+import { getHeader, getTimeline, getSidebar, addExpense } from '$/services/solicitation';
+import AddExpense from './addExpense';
+import './style.css';
+import { sort } from '$/utils/array';
 
 const Solicitation = () => {
 	const [
@@ -22,6 +22,11 @@ const Solicitation = () => {
 		showSuccess,
 		setShowSuccess
 	] = useState(false);
+
+	const [
+		analist,
+		setAnalist
+	] = useState(0);
 
 	const [
 		header,
@@ -38,37 +43,32 @@ const Solicitation = () => {
 		setSidebar
 	] = useState();
 
-	useEffect(async () => {
-		let header = await axios.get('https://api-front-end-challenge.buildstaging.com/api/header');
-		setHeader(header.data);
+	useEffect(() => {
+		const fetchData = async () => {
+			let header = await getHeader();
+			setHeader(header);
 
-		let timeline = await axios.get('https://api-front-end-challenge.buildstaging.com/api/timeline');
-		setTimeline(timeline.data.content);
+			let timeline = await getTimeline();
+			setTimeline(sort(timeline.content, 'cardDate'));
 
-		let sidebar = await axios.get('https://api-front-end-challenge.buildstaging.com/api/sidebar');
-		setSidebar(sidebar.data.content);
+			let sidebar = await getSidebar();
+			setSidebar(sidebar.content);
+		};
+		fetchData();
 	}, []);
 
 	const save = async () => {
 		let payload = { ...formik.values, cardDate: new Date(formik.values.cardDate).getTime() };
 
-		try {
-			let result = await axios.post(
-				'https://api-front-end-challenge.buildstaging.com/api/expense/add',
-				payload
-			);
-
-			setTimeline([
-				...timeline,
-				result.data
-			]);
-			setShowSuccess(true);
-			setShowAddExpense(false);
-			closeSuccess();
-			formik.handleReset();
-		} catch (e) {
-			console.log(e);
-		}
+		let result = await addExpense(payload);
+		console.log(result);
+		timeline.push(result);
+		sort(timeline, 'cardDate');
+		setTimeline(timeline);
+		setShowSuccess(true);
+		setShowAddExpense(false);
+		closeSuccess();
+		formik.handleReset();
 	};
 
 	const closeSuccess = () => {
@@ -107,15 +107,11 @@ const Solicitation = () => {
 
 	return (
 		<div className='solicitation'>
-			<div className='core'>
-				<Header data={header} />
+			<div id='core'>
+				<Header data={header} analist={analist} setAnalist={setAnalist} />
 				<div className='add-expense'>
-					<Button
-						variant='outlined'
-						className='add-expense-button'
-						onClick={() => setShowAddExpense(true)}
-					>
-						<FontAwesomeIcon className='add-expense-icon' icon={faReceipt} />
+					<Button variant='outlined' id='button' onClick={() => setShowAddExpense(true)}>
+						<FontAwesomeIcon id='icon' icon='receipt' />
 						{translate('add_expense')}
 					</Button>
 				</div>
@@ -139,7 +135,7 @@ const Solicitation = () => {
 				{showAddExpense && <AddExpense formik={formik} save={save} cancel={cancel} />}
 				<Timeline data={timeline} />
 			</div>
-			<div className='side'>
+			<div id='side'>
 				<SideBar data={sidebar} />
 			</div>
 		</div>

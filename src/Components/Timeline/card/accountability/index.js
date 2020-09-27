@@ -1,29 +1,26 @@
 import React, { Fragment } from 'react';
 import { Avatar, Card } from '@material-ui/core';
-import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAsterisk } from '@fortawesome/free-solid-svg-icons';
-import { translate } from '../../../../locales';
+import { translate } from '$/locales';
+import './style.css';
 
 const CardaccountabilityAccountability = ({ data }) => {
 	return (
-		<Card className='card'>
+		<Card id='card'>
 			{data && (
 				<Fragment>
 					<div className='accountability'>
-						<div className='accountability-card-type'>
-							<div className='accountability-icon'>
+						<div id='icon-area'>
+							<div id='icon'>
 								<Avatar>
-									<FontAwesomeIcon color='#5f6772' icon={faAsterisk} />
+									<FontAwesomeIcon color='#5f6772' icon='asterisk' />
 								</Avatar>
 							</div>
-							<div className='accountability-date'>
-								{new Date(data.cardDate).toLocaleDateString()}
-							</div>
+							<div id='date'>{new Date(data.cardDate).toLocaleDateString()}</div>
 						</div>
-						<div className='accountability-type'>
-							<div className='accountability-title'>{translate('type_capital')}</div>
-							<div className='accountability-text'>
+						<div id='type'>
+							<div id='title'>{translate('type_capital')}</div>
+							<div id='text'>
 								{data.cardType === 'ACCOUNTABILITY_SUBMITTED' &&
 									translate('expensesSentForApprovalBy') + ' ' + data.author.name}
 								{data.cardType === 'ACCOUNTABILITY_CREATED' &&

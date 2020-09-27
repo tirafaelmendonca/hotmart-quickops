@@ -1,5 +1,5 @@
 import React from 'react';
-import { translate } from '../../../locales';
+import { translate } from '$/locales';
 import './style.css';
 
 const Status = ({ text }) => (

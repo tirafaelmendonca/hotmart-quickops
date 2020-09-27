@@ -2,11 +2,81 @@
 	margin-top: 24px;
 }
 
-.chip {
+.timeline #chip {
 	width: 79px;
 }
 
-.card {
+.timeline #card {
 	min-height: 154px;
 	margin-top: 0px !important;
+}
+
+.timeline #icon-area {
+	display: flex;
+	width: 5%;
+	flex-direction: column;
+	padding: 30px;
+	align-items: center;
+}
+
+.timeline #icon {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 12px;
+}
+
+.timeline #date {
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+}
+
+.timeline #title {
+	display: flex;
+	flex-direction: column;
+	font-size: 12px;
+	padding-bottom: 12px;
+	color: #d0d3d6;
+}
+
+.timeline #text {
+	display: flex;
+	flex-direction: column;
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 12px;
+}
+
+.timeline #sub-text {
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+}
+
+.timeline #document {
+	width: 20%;
+	flex-direction: column;
+	padding: 30px;
+}
+
+.timeline #document-text {
+	color: #51c1c3;
+	font-size: 14px;
+}
+
+.timeline #document-icon {
+	padding-left: 12px;
+}
+
+.timeline #document-link {
+	color: #51c1c3 !important;
+	text-decoration: none !important;
+}
+
+.timeline #status {
+	width: 35%;
+	flex-direction: column;
+	padding: 30px;
+	align-items: center;
+	height: 90px;
 }

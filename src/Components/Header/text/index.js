@@ -4,8 +4,8 @@ import './style.css';
 const Text = ({ leftText, rigthText }) => {
 	return (
 		<div className='text'>
-			<div className='left-text'>{leftText}</div>
-			<div className='rigth-text'>{rigthText}</div>
+			<div id='left'>{leftText}</div>
+			<div id='rigth'>{rigthText}</div>
 		</div>
 	);
 };

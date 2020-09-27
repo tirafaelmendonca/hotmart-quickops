@@ -1,4 +1,4 @@
-import Solicitation from './solicitation';
-import Panel from './panel';
+import Solicitation from '$/screens/solicitation';
+import Panel from '$/screens/panel';
 
 export { Solicitation, Panel };

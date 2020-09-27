@@ -1,6 +1,6 @@
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Avatar } from '@material-ui/core';
-import React from 'react';
 import './style.css';
 
 const Values = ({ icon, title, value }) => (

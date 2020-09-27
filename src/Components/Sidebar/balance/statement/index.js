@@ -1,6 +1,6 @@
 import React from 'react';
-import { translate } from '../../../../locales';
-import formatCurrency from './currency';
+import { translate } from '$/locales';
+import formatCurrency from '$/utils/currency';
 import StatementItem from './statementItem';
 import './style.css';
 

@@ -13,6 +13,8 @@
 		"@testing-library/react": "^9.3.2",
 		"@testing-library/user-event": "^7.1.2",
 		"axios": "^0.20.0",
+		"babel-plugin-root-import": "^6.1.0",
+		"customize-cra": "^0.8.0",
 		"formik": "2.0.0",
 		"i18next": "^19.7.0",
 		"i18next-browser-languagedetector": "^6.0.1",
@@ -22,13 +24,16 @@
 		"react-i18next": "^11.7.3",
 		"react-router-dom": "^5.2.0",
 		"react-scripts": "3.4.3",
-		"yup": "^0.27.0"
+		"yup": "^0.27.0",
+		"react-app-rewire-hot-loader": "^2.0.1",
+		"react-app-rewire-hot-loader-for-customize-cra": "^1.0.1",
+		"react-app-rewired": "^2.1.4",
+		"react-hot-loader": "^4.12.15",
+		"rimraf": "^3.0.0"
 	},
 	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+		"start": "rimraf ./build && react-app-rewired start",
+		"build": "react-app-rewired build"
 	},
 	"eslintConfig": {
 		"extends": "react-app"

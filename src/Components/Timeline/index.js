@@ -2,20 +2,21 @@ import React, { Fragment } from 'react';
 import CardTimeLineExpense from './card/expense';
 import CardTimeLineEvaluation from './card/evaluation';
 import CardTimeLineAccountability from './card/accountability';
-
 import './style.css';
 
 const Timeline = ({ data }) => {
-	const getCardTimeLine = (item, key) => {
+	const getCardTimeLine = item => {
 		switch (item.cardType) {
 			case 'EXPENSE':
-				return <CardTimeLineExpense key={key} data={item} />;
+				return <CardTimeLineExpense data={item} />;
 			case 'EVALUATION':
-				return <CardTimeLineEvaluation key={key} data={item} />;
+				return <CardTimeLineEvaluation data={item} />;
 			case 'ACCOUNTABILITY_SUBMITTED':
-				return <CardTimeLineAccountability key={key} data={item} />;
+				return <CardTimeLineAccountability data={item} />;
 			case 'ACCOUNTABILITY_CREATED':
-				return <CardTimeLineAccountability key={key} data={item} />;
+				return <CardTimeLineAccountability data={item} />;
+			default:
+				return <CardTimeLineExpense data={item} />;
 		}
 	};
 
@@ -23,7 +24,7 @@ const Timeline = ({ data }) => {
 		<div className='timeline'>
 			{data &&
 				data.map((item, key) => {
-					return <Fragment>{getCardTimeLine(item, key)}</Fragment>;
+					return <Fragment key={key}>{getCardTimeLine(item)}</Fragment>;
 				})}
 		</div>
 	);

@@ -3,13 +3,13 @@
 	font-family: 'Nunito Sans', sans-serif;
 }
 
-.core {
+.solicitation #core {
 	display: flex;
 	flex-direction: column;
 	width: 75%;
 }
 
-.side {
+.solicitation #side {
 	display: flex;
 	flex-direction: column;
 	width: 25%;
@@ -23,13 +23,13 @@
 	align-items: flex-end;
 }
 
-.add-expense-button {
+.add-expense #button {
 	color: #6b7480 !important;
 	border: 1px solid #6b7480 !important;
 	text-transform: none !important;
 }
 
-.add-expense-icon {
+.add-expense #icon {
 	color: #6b7480 !important;
 	padding-right: 12px;
 }

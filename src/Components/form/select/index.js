@@ -1,24 +1,28 @@
 import React, { memo } from 'react';
 import { InputLabel, Select as SelectMUI } from '@material-ui/core';
+import { translate } from '$/locales';
 import './style.css';
-import { translate } from '../../../locales';
 
 const Select = ({ label, name, data, formik }) => {
 	return (
 		<div className='select'>
 			<InputLabel id='label'>{label}</InputLabel>
 			<SelectMUI
-				id='select-box'
+				className='select-box'
 				fullWidth
 				name={name}
 				native
 				onChange={formik.handleChange}
 				value={formik.values[name]}
 				variant='outlined'
-				error={formik.submitCount > 0 ? formik.errors[name] : ''}
+				error={formik.submitCount > 0 && formik.errors[name]}
 			>
 				<option value={'empty'}>{translate('chooseAnOption')}</option>
-				{data.map((item, key) => <option value={item}>{translate(item)}</option>)}
+				{data.map((item, key) => (
+					<option key={key} value={item}>
+						{translate(item)}
+					</option>
+				))}
 			</SelectMUI>
 			<p id='error'>{formik.submitCount > 0 ? formik.errors[name] : ''}</p>
 		</div>

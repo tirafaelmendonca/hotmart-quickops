@@ -1,41 +1,40 @@
 import React, { Fragment } from 'react';
 import { Avatar, Chip, Card } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown, faUsers } from '@fortawesome/free-solid-svg-icons';
-import { translate } from '../../../../locales';
+import { translate } from '$/locales';
 import './style.css';
 
 const CardevaluationEvaluation = ({ data }) => {
 	return (
-		<Card className='card'>
+		<Card id='card'>
 			{data && (
 				<Fragment>
 					<div className='evaluation'>
-						<div className='evaluation-card-type'>
-							<div className='evaluation-icon'>
+						<div id='icon-area'>
+							<div id='icon'>
 								<Avatar>
-									<FontAwesomeIcon color='#5f6772' icon={faUsers} />
+									<FontAwesomeIcon color='#5f6772' icon='users' />
 								</Avatar>
 							</div>
-							<div className='evaluation-date'>{new Date(data.cardDate).toLocaleDateString()}</div>
+							<div id='date'>{new Date(data.cardDate).toLocaleDateString()}</div>
 						</div>
-						<div className='evaluation-type'>
-							<div className='evaluation-title'>{translate('type_capital')}</div>
-							<div className='evaluation-text'>
+						<div id='type'>
+							<div id='title'>{translate('type_capital')}</div>
+							<div id='text'>
 								{translate('requestApproval')} - {data.author.name}
 							</div>
 						</div>
-						<div className='evaluation-status'>
-							<div className='evaluation-title'>{translate('status_capital')}</div>
-							<div className='evaluation-text'>
-								<Chip className='chip' variant='outlined' label={translate(data.status)} />
+						<div id='status'>
+							<div id='title'>{translate('status_capital')}</div>
+							<div id='text'>
+								<Chip id='chip' variant='outlined' label={translate(data.status)} />
 							</div>
 						</div>
-						<div className='evaluation-document'>
-							<div className='evaluation-document-text'>
-								<a className='evaluation-document-link' href={data.resourceUrl}>
+						<div id='document'>
+							<div id='document-text'>
+								<a id='document-link' href={data.resourceUrl}>
 									{translate('viewApprovals')}
-									<FontAwesomeIcon className='evaluation-document-icon' icon={faAngleDown} />
+									<FontAwesomeIcon id='document-icon' icon='angle-down' />
 								</a>
 							</div>
 						</div>

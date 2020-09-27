@@ -1,6 +1,5 @@
 import React from 'react';
-import Menu from '../menu';
-import Breadcrumbs from '../breadcrumbs';
+import { Menu, Breadcrumbs } from '$/components';
 import './style.css';
 
 const WorkSpace = ({ children }) => {

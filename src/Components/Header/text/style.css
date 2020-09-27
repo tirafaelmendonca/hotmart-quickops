@@ -4,14 +4,14 @@
 	font-size: 14px;
 }
 
-.left-text {
+.text #left {
 	display: flex;
 	flex-direction: column;
 	width: 90px;
 	align-items: flex-end;
 }
 
-.rigth-text {
+.text #rigth {
 	display: flex;
 	flex-direction: column;
 	font-weight: bold;

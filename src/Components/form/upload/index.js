@@ -1,8 +1,7 @@
-import { faFilter } from '@fortawesome/free-solid-svg-icons';
+import React, { memo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '@material-ui/core';
-import React, { memo } from 'react';
-import { translate } from '../../../locales';
+import { translate } from '$/locales';
 import './style.css';
 
 const Upload = ({ name, formik }) => {
@@ -20,7 +19,7 @@ const Upload = ({ name, formik }) => {
 					type='file'
 				/>
 				<Button className='file-button' variant='outlined' component='span'>
-					<FontAwesomeIcon className='add-expense-icon' icon={faFilter} />
+					<FontAwesomeIcon className='add-expense-icon' icon='filter' />
 					{translate('chooseFile')}
 				</Button>
 			</label>

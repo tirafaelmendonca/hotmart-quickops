@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, BrowserRouter, Route, Redirect } from 'react-router-dom';
-import Routes from './routes';
-import { TopBar, WorkSpace } from './components';
+import Routes from '$/routes';
+import { TopBar, WorkSpace } from '$/components';
 
 const App = () => {
 	return (

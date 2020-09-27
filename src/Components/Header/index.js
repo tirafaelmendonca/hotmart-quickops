@@ -1,15 +1,12 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment } from 'react';
 import { Card as CardMUI, Select } from '@material-ui/core';
+import { translate } from '$/locales';
+import { ANALIST } from '$/utils/constants';
 import Text from './text';
-import { translate } from '../../locales';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './style.css';
 
-const Header = ({ data }) => {
-	const [
-		analist,
-		setAnalist
-	] = useState(0);
-
+const Header = ({ data, analist, setAnalist }) => {
 	const getPeople = people => {
 		return people === 1 ? translate('people') : translate('peoples');
 	};
@@ -18,11 +15,16 @@ const Header = ({ data }) => {
 		<CardMUI className='header'>
 			{data && (
 				<Fragment>
-					<div className='title'>
-						{translate('reimbursement')} #{data.id} - {data.justification}
+					<div id='title'>
+						<div id='text'>
+							{translate('reimbursement')} #{data.id} - {data.justification}
+						</div>
+						<div id='edit'>
+							<FontAwesomeIcon id='icon' icon='edit' />
+						</div>
 					</div>
-					<div className='items'>
-						<div className='data'>
+					<div id='items'>
+						<div id='data'>
 							<Text leftText={translate('name')} rigthText={data.collaborator.name} />
 							<Text leftText={translate('email')} rigthText={data.collaborator.email} />
 							<Text leftText={translate('justification')} rigthText={data.justification} />
@@ -51,8 +53,8 @@ const Header = ({ data }) => {
 								}
 							/>
 						</div>
-						<div className='others'>
-							<div className='assign-analyst-title'>{translate('assignAnalyst')}</div>
+						<div id='others'>
+							<div id='assign-analyst-title'>{translate('assignAnalyst')}</div>
 							<Select
 								native
 								value={analist}
@@ -60,14 +62,16 @@ const Header = ({ data }) => {
 								variant='outlined'
 								className='assign-analyst'
 							>
-								<option value={0}>{translate('assignAnalyst')}</option>
-								<option value={10}>Henrique</option>
-								<option value={20}>Cristiano</option>
-								<option value={30}>Gilberto</option>
+								<option value={'empty'}>{translate('chooseAnOption')}</option>
+								{ANALIST.map((item, key) => (
+									<option key={key} value={item}>
+										{item}
+									</option>
+								))}
 							</Select>
-							<div className='cost-center-title'>{translate('costCenter')}</div>
+							<div id='cost-center-title'>{translate('costCenter')}</div>
 							{data.costCenters.map((costCenter, key) => (
-								<div className='cost-center' key={key}>
+								<div id='cost-center' key={key}>
 									{costCenter.percentage}% - {costCenter.name}
 								</div>
 							))}
