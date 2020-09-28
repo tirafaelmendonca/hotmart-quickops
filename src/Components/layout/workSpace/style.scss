@@ -1,0 +1,13 @@
+@import "../../../theme/colors.scss";
+@import "../../../theme/varibles.scss";
+
+.space {
+	display: flex;
+}
+
+.work {
+	min-height: $appMinHeight;
+	background-color: $bgWorkSpace;
+	flex-direction: column;
+	flex-grow: 1;
+}

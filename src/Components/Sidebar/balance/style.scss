@@ -1,0 +1,52 @@
+@import '../../../theme/colors.scss';
+@import '../../../theme/varibles.scss';
+
+.balance {
+	margin-top: $spacingSmall;
+	width: 100%;
+	border-radius: $borderRadius;
+	border: solid 1px $borderBalance !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.balance #title-box {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	justify-content: center;
+	margin-bottom: $spacingSmall;
+}
+
+.balance #title {
+	margin: $spacingSmall 0px $spacingSmall 0px;
+	padding-bottom: $spacingSmall;
+	font-size: $fontBalaceTitle;
+	color: $balanceColor;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.balance #total-balance {
+	display: flex;
+	flex-direction: column;
+	font-size: $fontBalaceTotal;
+	font-weight: bold;
+	padding-bottom: $spacingSmall;
+	align-self: center;
+}
+
+.balance #group-values {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	color: $titleGray;
+	justify-content: space-between;
+	padding-bottom: $spacingSmall;
+}
+
+.balance #separation {
+	border-right: solid 1px $borderBalance !important;
+}

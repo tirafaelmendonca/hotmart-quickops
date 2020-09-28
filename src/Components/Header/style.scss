@@ -1,0 +1,65 @@
+@import "../../theme/colors.scss";
+@import "../../theme/varibles.scss";
+
+.header {
+	min-height: $headerHeight;
+	padding: $spacingMedium;
+	color: $white !important;
+	background-image: linear-gradient(to right, #00d7ce 3%, #00c5fc) !important;
+}
+
+.header #text {
+	font-size: $fontHeaderText;
+	font-weight: bold;
+	margin-bottom: $spacingMedium;
+}
+
+.header #title {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header #items {
+	display: flex;
+	flex-grow: 1;
+}
+
+.header #data {
+	flex-direction: column;
+	width: 70%;
+	border-right: solid 1px;
+}
+
+.header #others {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	padding: $spacingLarge;
+	justify-content: center;
+}
+
+.header #cost-center-title {
+	flex-direction: column;
+	font-size: $fontCenterCost;
+	margin-bottom: $spacingSmall;
+}
+
+.header #cost-center {
+	font-size: $fontCenterCost;
+	font-weight: bold;
+	margin-bottom: $spacingSmall;
+}
+
+.header #assign-analyst-title {
+	flex-direction: column;
+	font-size: $fontAssignAnalist;
+	margin-bottom: $spacingSmall;
+}
+
+.assign-analyst {
+	font-size: $fontCenterCost;
+	font-weight: bold;
+	margin-bottom: $spacingSmall;
+	background-color: $white;
+	color: $balanceColor;
+}

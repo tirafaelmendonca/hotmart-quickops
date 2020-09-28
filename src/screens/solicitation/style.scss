@@ -1,0 +1,38 @@
+@import "../../theme/colors.scss";
+@import "../../theme/varibles.scss";
+
+.solicitation {
+	display: flex;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.solicitation #core {
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+}
+
+.solicitation #side {
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	background-color: $white;
+}
+
+.add-expense {
+	margin: 0px $spacingMedium 0px $spacingMedium;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.add-expense #button {
+	color: $default !important;
+	border: 1px solid $default !important;
+	text-transform: none !important;
+}
+
+.add-expense #icon {
+	color: $default !important;
+	padding-right: $spacingSmall;
+}

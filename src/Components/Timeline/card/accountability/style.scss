@@ -1,0 +1,14 @@
+@import '../../../../theme/colors.scss';
+@import '../../../../theme/varibles.scss';
+
+.accountability {
+	display: flex;
+}
+
+.accountability #type {
+	width: 95%;
+	flex-direction: column;
+	padding: $spacingLarge;
+	align-items: center;
+	height: $timelineHeight;
+}

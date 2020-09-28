@@ -1,0 +1,37 @@
+@import '../../../../../theme/colors.scss';
+@import '../../../../../theme/varibles.scss';
+
+.statement-list-item {
+	display: flex;
+	flex-direction: column;
+	padding: $spacingSmall 0px $spacingSmall 0px;
+}
+
+.statement-list-item #description-group {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	font-size: $spacingSmall;
+	font-weight: bold;
+	color: $statusColorTitle;
+}
+
+.statement-list-item #description {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+}
+
+.statement-list-item #value {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-end;
+	width: 40%;
+}
+
+.statement-list-item #sub-description {
+	display: flex;
+	flex-direction: column;
+	font-size: $fontSubTitle;
+	color: $subDescription;
+}

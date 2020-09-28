@@ -1,0 +1,56 @@
+@import "../../../theme/colors.scss";
+@import "../../../theme/varibles.scss";
+
+.add-expense-form {
+	display: flex;
+	flex-direction: column;
+	padding: $spacingMedium;
+	margin-bottom: 0px !important;
+}
+
+.add-expense-form #title {
+	color: $title;
+	font-size: $fontTitle;
+	font-weight: bold;
+	margin-bottom: $spacingMedium;
+}
+
+.add-expense-form #content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.add-expense-form #form {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.add-expense-form #form-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.add-expense-form #actions {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-top: $spacingMedium;
+}
+
+.add-expense-form #cancel {
+	text-transform: none;
+}
+
+.add-expense-form #save {
+	margin-left: $spacingSmall;
+	text-transform: none;
+}
+
+.alert {
+	margin-bottom: 0px !important;
+	background-color: $bgSuccess !important;
+	border: solid 1px $success !important;
+}

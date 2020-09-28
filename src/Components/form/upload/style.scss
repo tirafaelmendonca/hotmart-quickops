@@ -1,0 +1,42 @@
+@import "../../../theme/colors.scss";
+@import "../../../theme/varibles.scss";
+
+.file {
+	display: flex;
+	flex-direction: column;
+	background-color: $bgFile;
+	height: $fileHeader;
+	width: 50%;
+	border: solid 1px $borderFile;
+	border-radius: $borderRadius;
+	justify-content: center;
+	align-items: center;
+}
+
+.file-success {
+	display: flex;
+	flex-direction: column;
+	height: $fileHeader;
+	width: 50%;
+	border: solid 1px $success !important;
+	background-color: $bgSuccess !important;
+	border-radius: $borderRadius;
+	justify-content: center;
+	align-items: center;
+}
+
+.title-file {
+	color: $title;
+	font-size: $fontAssignAnalist;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+.description {
+	font-size: $fontSubTitle;
+	margin: $spacingSmall;
+}
+
+.file-button {
+	text-transform: none !important;
+}

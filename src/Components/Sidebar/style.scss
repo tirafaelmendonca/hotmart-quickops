@@ -1,0 +1,8 @@
+@import '../../theme/colors.scss';
+@import '../../theme/varibles.scss';
+
+.sidebar {
+	background-color: $white;
+	min-height: $appMinHeight;
+	padding: $spacingLarge;
+}

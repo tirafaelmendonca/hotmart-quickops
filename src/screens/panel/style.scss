@@ -1,0 +1,22 @@
+@import '../../theme/colors.scss';
+@import '../../theme/varibles.scss';
+
+.panel {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.panel #button {
+	margin-top: 100px;
+	color: $default !important;
+	border: 1px solid $default !important;
+	text-transform: none !important;
+}
+
+.panel #icon {
+	color: $default !important;
+	padding-right: $spacingSmall;
+}

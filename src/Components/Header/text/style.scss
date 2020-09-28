@@ -1,0 +1,24 @@
+@import "../../../theme/colors.scss";
+@import "../../../theme/varibles.scss";
+
+.text {
+	display: flex;
+	margin-bottom: $spacingSmall;
+	font-size: $fontAssignAnalist;
+}
+
+.text #left {
+	display: flex;
+	flex-direction: column;
+	width: $timelineHeight;
+	align-items: flex-end;
+}
+
+.text #rigth {
+	display: flex;
+	flex-direction: column;
+	font-weight: bold;
+	align-items: flex-start;
+	padding-left: $spacingLarge;
+	padding-right: $spacingLarge;
+}

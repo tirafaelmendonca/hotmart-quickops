@@ -1,0 +1,7 @@
+@import "../../../theme/colors.scss";
+@import "../../../theme/varibles.scss";
+
+.breadcrumbs {
+	height: $topBarHeight;
+	background-color: $bgBreadCrumbs;
+}

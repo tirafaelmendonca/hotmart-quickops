@@ -1,0 +1,85 @@
+@import '../../theme/colors.scss';
+@import '../../theme/varibles.scss';
+
+.timeline {
+	margin-top: $spacingMedium;
+}
+
+.timeline #chip {
+	width: $widthChip;
+}
+
+.timeline #card {
+	min-height: $minHeightCard;
+	margin-top: 0px !important;
+}
+
+.timeline #icon-area {
+	display: flex;
+	width: 5%;
+	flex-direction: column;
+	padding: $spacingLarge;
+	align-items: center;
+}
+
+.timeline #icon {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: $spacingSmall;
+}
+
+.timeline #date {
+	display: flex;
+	flex-direction: column;
+	font-size: $fontDate;
+}
+
+.timeline #title {
+	display: flex;
+	flex-direction: column;
+	font-size: $fontTitleTimeline;
+	padding-bottom: $spacingSmall;
+	color: $titleGray;
+}
+
+.timeline #text {
+	display: flex;
+	flex-direction: column;
+	font-size: $fontTextTimeline;
+	font-weight: bold;
+	padding-bottom: $spacingSmall;
+}
+
+.timeline #sub-text {
+	display: flex;
+	flex-direction: column;
+	font-size: $fontSubTextTimeline;
+}
+
+.timeline #document {
+	width: 20%;
+	flex-direction: column;
+	padding: $spacingLarge;
+}
+
+.timeline #document-text {
+	color: $primary;
+	font-size: $fontSubTextTimeline;
+}
+
+.timeline #document-icon {
+	padding-right: $spacingSmall;
+}
+
+.timeline #document-link {
+	color: $primary !important;
+	text-decoration: none !important;
+}
+
+.timeline #status {
+	width: 35%;
+	flex-direction: column;
+	padding: $spacingLarge;
+	align-items: center;
+	height: $timelineHeight;
+}
