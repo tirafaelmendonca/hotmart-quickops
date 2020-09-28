@@ -39,4 +39,4 @@ Todo o código foi desenvolvido em Inglês e a aplicação conta com internacion
 * `react-app-rewired` Permite alterar configurações do webpack sem a necessidade de ejetar o projeto
 * `react-hot-loader` Permite a utilização de hot reload em desenvolvimento
 * `react-router-dom` Gerencia as rotas da aplicação
-* `yup` Permit
+* `yup` Permite a criação de validação e foi utilizada em conjunto com o formik
