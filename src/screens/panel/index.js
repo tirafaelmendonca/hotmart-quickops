@@ -3,7 +3,7 @@ import { Button } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useHistory } from 'react-router-dom';
 import { translate } from '$/locales';
-import './style.css';
+import './style.scss';
 
 const Panel = () => {
 	const history = useHistory();

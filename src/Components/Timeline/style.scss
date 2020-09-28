@@ -1,13 +1,16 @@
+@import '../../theme/colors.scss';
+@import '../../theme/varibles.scss';
+
 .timeline {
-	margin-top: 24px;
+	margin-top: $spacingMedium;
 }
 
 .timeline #chip {
-	width: 79px;
+	width: $widthChip;
 }
 
 .timeline #card {
-	min-height: 154px;
+	min-height: $minHeightCard;
 	margin-top: 0px !important;
 }
 
@@ -15,68 +18,68 @@
 	display: flex;
 	width: 5%;
 	flex-direction: column;
-	padding: 30px;
+	padding: $spacingLarge;
 	align-items: center;
 }
 
 .timeline #icon {
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 12px;
+	padding-bottom: $spacingSmall;
 }
 
 .timeline #date {
 	display: flex;
 	flex-direction: column;
-	font-size: 14px;
+	font-size: $fontDate;
 }
 
 .timeline #title {
 	display: flex;
 	flex-direction: column;
-	font-size: 12px;
-	padding-bottom: 12px;
-	color: #d0d3d6;
+	font-size: $fontTitleTimeline;
+	padding-bottom: $spacingSmall;
+	color: $titleGray;
 }
 
 .timeline #text {
 	display: flex;
 	flex-direction: column;
-	font-size: 20px;
+	font-size: $fontTextTimeline;
 	font-weight: bold;
-	padding-bottom: 12px;
+	padding-bottom: $spacingSmall;
 }
 
 .timeline #sub-text {
 	display: flex;
 	flex-direction: column;
-	font-size: 14px;
+	font-size: $fontSubTextTimeline;
 }
 
 .timeline #document {
 	width: 20%;
 	flex-direction: column;
-	padding: 30px;
+	padding: $spacingLarge;
 }
 
 .timeline #document-text {
-	color: #51c1c3;
-	font-size: 14px;
+	color: $primary;
+	font-size: $fontSubTextTimeline;
 }
 
 .timeline #document-icon {
-	padding-left: 12px;
+	padding-right: $spacingSmall;
 }
 
 .timeline #document-link {
-	color: #51c1c3 !important;
+	color: $primary !important;
 	text-decoration: none !important;
 }
 
 .timeline #status {
 	width: 35%;
 	flex-direction: column;
-	padding: 30px;
+	padding: $spacingLarge;
 	align-items: center;
-	height: 90px;
+	height: $timelineHeight;
 }

@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import CardTimeLineExpense from './card/expense';
 import CardTimeLineEvaluation from './card/evaluation';
 import CardTimeLineAccountability from './card/accountability';
-import './style.css';
+import './style.scss';
 
 const Timeline = ({ data }) => {
 	const getCardTimeLine = item => {

@@ -1,3 +1,6 @@
+@import '../../theme/colors.scss';
+@import '../../theme/varibles.scss';
+
 .panel {
 	display: flex;
 	flex-direction: column;
@@ -8,12 +11,12 @@
 
 .panel #button {
 	margin-top: 100px;
-	color: #6b7480 !important;
-	border: 1px solid #6b7480 !important;
+	color: $default !important;
+	border: 1px solid $default !important;
 	text-transform: none !important;
 }
 
 .panel #icon {
-	color: #6b7480 !important;
-	padding-right: 12px;
+	color: $default !important;
+	padding-right: $spacingSmall;
 }

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { translate } from '$/locales';
 import { ANALIST } from '$/utils/constants';
 import Text from './text';
-import './style.css';
+import './style.scss';
 
 const Header = ({ data, analist, setAnalist }) => {
 	const getPeople = people => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './style.scss';
 
 const StatementItem = ({ description, subDescription, value }) => (
 	<div className='statement-list-item'>

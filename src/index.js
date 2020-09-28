@@ -18,7 +18,7 @@ import {
 import App from '$/app';
 import { i18n } from '$/locales';
 import theme from '$/theme';
-import './style.css';
+import './style.scss';
 
 library.add(
 	faBus,

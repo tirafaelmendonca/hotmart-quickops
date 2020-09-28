@@ -23,7 +23,7 @@ export default {
 		expensesApprovedByTheFinancier: 'Despesas aprovadas pelo financeiro',
 		paymentMade: 'Pagamento realizado',
 		paymentMadeByTheFinance: 'pagamento realizado pelo financeiro',
-		reimbursement: 'Reembolso',
+		refund: 'Reembolso',
 		name: 'Nome',
 		email: 'E-mail',
 		justification: 'Justificativa',

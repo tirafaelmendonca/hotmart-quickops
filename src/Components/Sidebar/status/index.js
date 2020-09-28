@@ -1,6 +1,6 @@
 import React from 'react';
 import { translate } from '$/locales';
-import './style.css';
+import './style.scss';
 
 const Status = ({ text }) => (
 	<div className='status'>

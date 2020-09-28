@@ -1,0 +1,8 @@
+@import "../../../theme/colors.scss";
+@import "../../../theme/varibles.scss";
+
+.menu {
+	width: $menuWidth;
+	min-height: $appMinHeight;
+	background-color: $statusColorTitle;
+}

@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import { InputLabel, Select as SelectMUI } from '@material-ui/core';
 import { translate } from '$/locales';
-import './style.css';
+import './style.scss';
 
 const Select = ({ label, name, data, formik }) => {
 	return (

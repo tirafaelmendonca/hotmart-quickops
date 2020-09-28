@@ -2,7 +2,7 @@ import React from 'react';
 import { translate } from '$/locales';
 import Balance from './balance';
 import Status from './status';
-import './style.css';
+import './style.scss';
 
 const SideBar = ({ data }) => {
 	return (

@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Avatar, Card } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { translate } from '$/locales';
-import './style.css';
+import './style.scss';
 
 const CardaccountabilityAccountability = ({ data }) => {
 	return (

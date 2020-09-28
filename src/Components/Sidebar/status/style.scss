@@ -1,0 +1,29 @@
+@import '../../../theme/colors.scss';
+@import '../../../theme/varibles.scss';
+
+.status {
+	width: 100%;
+	height: 80px;
+	border-radius: $borderRadius;
+	border: solid 1px $default !important;
+	background-color: $bgStatus !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.status #title {
+	font-size: $statusTitle;
+	color: $statusColorTitle;
+	display: flex;
+	flex-direction: row;
+}
+
+.status #text {
+	font-size: $statusText;
+	color: $statusColorTitle;
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+}

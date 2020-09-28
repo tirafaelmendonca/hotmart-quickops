@@ -3,7 +3,7 @@ import { Avatar, Chip, Card } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import formatCurrency from '$/utils/currency';
 import { translate } from '$/locales';
-import './style.css';
+import './style.scss';
 
 const CardexpenseExpense = ({ data }) => {
 	return (

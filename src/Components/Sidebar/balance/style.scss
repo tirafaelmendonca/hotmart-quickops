@@ -1,8 +1,11 @@
+@import '../../../theme/colors.scss';
+@import '../../../theme/varibles.scss';
+
 .balance {
-	margin-top: 12px;
+	margin-top: $spacingSmall;
 	width: 100%;
-	border-radius: 6px;
-	border: solid 1px rgba(0, 0, 0, 0.23) !important;
+	border-radius: $borderRadius;
+	border: solid 1px $borderBalance !important;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -13,14 +16,14 @@
 	flex-direction: column;
 	width: 90%;
 	justify-content: center;
-	margin-bottom: 12px;
+	margin-bottom: $spacingSmall;
 }
 
 .balance #title {
-	margin: 12px 0px 12px 0px;
-	padding-bottom: 12px;
-	font-size: 16px;
-	color: #545b64;
+	margin: $spacingSmall 0px $spacingSmall 0px;
+	padding-bottom: $spacingSmall;
+	font-size: $fontBalaceTitle;
+	color: $balanceColor;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -29,9 +32,9 @@
 .balance #total-balance {
 	display: flex;
 	flex-direction: column;
-	font-size: 20px;
+	font-size: $fontBalaceTotal;
 	font-weight: bold;
-	padding-bottom: 12px;
+	padding-bottom: $spacingSmall;
 	align-self: center;
 }
 
@@ -39,11 +42,11 @@
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	color: #d0d3d6;
+	color: $titleGray;
 	justify-content: space-between;
-	padding-bottom: 12px;
+	padding-bottom: $spacingSmall;
 }
 
 .balance #separation {
-	border-right: solid 1px rgba(0, 0, 0, 0.23) !important;
+	border-right: solid 1px $borderBalance !important;
 }

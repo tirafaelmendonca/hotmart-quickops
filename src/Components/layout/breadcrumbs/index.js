@@ -3,7 +3,7 @@ import { Breadcrumbs as BreadcrumbsMUI, Link } from '@material-ui/core';
 import { useLocation } from 'react-router-dom';
 import Routes from '$/routes';
 import { translate } from '$/locales';
-import './style.css';
+import './style.scss';
 
 const Breadcrumbs = () => {
 	const location = useLocation();

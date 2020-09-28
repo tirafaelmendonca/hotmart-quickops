@@ -4,7 +4,7 @@ import Values from './values';
 import Statement from './statement';
 import formatCurrency from '$/utils/currency';
 import { translate } from '$/locales';
-import './style.css';
+import './style.scss';
 
 const Balance = ({ data }) => (
 	<div className='balance'>

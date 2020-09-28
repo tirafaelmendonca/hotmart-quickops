@@ -3,7 +3,7 @@ import { Button, Card } from '@material-ui/core';
 import { Input, Select, Upload } from '$/components';
 import { CURRENCY_CODE, EXPENSE_TYPE_CODE } from '$/utils/constants';
 import { translate } from '$/locales';
-import './style.css';
+import './style.scss';
 
 const AddExpense = ({ cancel, formik }) => {
 	return (

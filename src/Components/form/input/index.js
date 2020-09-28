@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { InputLabel, TextField } from '@material-ui/core';
-import './style.css';
+import './style.scss';
 
 const Input = ({ label, name, formik, type = 'text' }) => {
 	return (

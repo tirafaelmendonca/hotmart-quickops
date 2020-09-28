@@ -1,0 +1,21 @@
+@import "../../../theme/colors.scss";
+@import "../../../theme/varibles.scss";
+
+.input {
+	margin-left: $spacingSmall;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.input #label {
+	color: $title;
+	font-size: $fontBalaceTitle;
+	font-weight: bold;
+	margin-bottom: $spacingVerySmall;
+}
+
+.input #error {
+	margin: $spacingVerySmall 0px 0px 0px;
+	font-size: $fontTitleTimeline;
+	color: $error;
+}

@@ -1,16 +1,19 @@
+@import '../../../../../theme/colors.scss';
+@import '../../../../../theme/varibles.scss';
+
 .statement-list-item {
 	display: flex;
 	flex-direction: column;
-	padding: 10px 0px 10px 0px;
+	padding: $spacingSmall 0px $spacingSmall 0px;
 }
 
 .statement-list-item #description-group {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	font-size: 12px;
+	font-size: $spacingSmall;
 	font-weight: bold;
-	color: #053d4e;
+	color: $statusColorTitle;
 }
 
 .statement-list-item #description {
@@ -29,6 +32,6 @@
 .statement-list-item #sub-description {
 	display: flex;
 	flex-direction: column;
-	font-size: 11px;
-	color: #9ea4ac;
+	font-size: $fontSubTitle;
+	color: $subDescription;
 }

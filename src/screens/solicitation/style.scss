@@ -1,3 +1,6 @@
+@import "../../theme/colors.scss";
+@import "../../theme/varibles.scss";
+
 .solicitation {
 	display: flex;
 	font-family: 'Nunito Sans', sans-serif;
@@ -13,23 +16,23 @@
 	display: flex;
 	flex-direction: column;
 	width: 25%;
-	background-color: #ffffff;
+	background-color: $white;
 }
 
 .add-expense {
-	margin: 0px 24px 0px 24px;
+	margin: 0px $spacingMedium 0px $spacingMedium;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
 }
 
 .add-expense #button {
-	color: #6b7480 !important;
-	border: 1px solid #6b7480 !important;
+	color: $default !important;
+	border: 1px solid $default !important;
 	text-transform: none !important;
 }
 
 .add-expense #icon {
-	color: #6b7480 !important;
-	padding-right: 12px;
+	color: $default !important;
+	padding-right: $spacingSmall;
 }

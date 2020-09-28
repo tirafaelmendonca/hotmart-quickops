@@ -10,7 +10,7 @@ import { sort } from '$/utils/array';
 import { translate } from '$/locales';
 import { getHeader, getTimeline, getSidebar, addExpense } from '$/services/solicitation';
 import AddExpense from './addExpense';
-import './style.css';
+import './style.scss';
 
 const Solicitation = () => {
 	const [

@@ -1,9 +1,12 @@
+@import '../../../../theme/colors.scss';
+@import '../../../../theme/varibles.scss';
+
 .values {
 	display: flex;
 	flex-direction: row;
-	font-size: 10px;
+	font-size: $fontValues;
 	width: 100%;
-	padding-bottom: 12px;
+	padding-bottom: $spacingSmall;
 	align-items: center;
 	justify-content: center;
 }
@@ -17,20 +20,20 @@
 
 .values #value {
 	font-size: 12px;
-	color: #32363b;
+	color: $valuesColor;
 	display: flex;
 	flex-direction: column;
 }
 
 .values #icon {
 	font-size: 12px;
-	color: #d0d3d6;
+	color: $titleGray;
 }
 
 .values #avatar {
-	width: 26px !important;
-	height: 26px !important;
-	margin-right: 5px;
-	background-color: #ffffff !important;
-	border: solid 1px #d0d3d6 !important;
+	width: $avatar !important;
+	height: $avatar !important;
+	margin-right: $spacingVerySmall;
+	background-color: $white !important;
+	border: solid 1px $titleGray !important;
 }

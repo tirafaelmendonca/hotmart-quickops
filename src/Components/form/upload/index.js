@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '@material-ui/core';
 import { translate } from '$/locales';
-import './style.css';
+import './style.scss';
 
 const Upload = ({ name, formik }) => {
 	return (

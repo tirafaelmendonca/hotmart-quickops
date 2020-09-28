@@ -1,15 +1,18 @@
+@import "../../../theme/colors.scss";
+@import "../../../theme/varibles.scss";
+
 .add-expense-form {
 	display: flex;
 	flex-direction: column;
-	padding: 24px;
+	padding: $spacingMedium;
 	margin-bottom: 0px !important;
 }
 
 .add-expense-form #title {
-	color: #353a40;
-	font-size: 20px;
+	color: $title;
+	font-size: $fontTitle;
 	font-weight: bold;
-	margin-bottom: 24px;
+	margin-bottom: $spacingMedium;
 }
 
 .add-expense-form #content {
@@ -34,7 +37,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	margin-top: 24px;
+	margin-top: $spacingMedium;
 }
 
 .add-expense-form #cancel {
@@ -42,12 +45,12 @@
 }
 
 .add-expense-form #save {
-	margin-left: 12px;
+	margin-left: $spacingSmall;
 	text-transform: none;
 }
 
 .alert {
 	margin-bottom: 0px !important;
-	background-color: #e6fff0 !important;
-	border: solid 1px #03a046 !important;
+	background-color: $bgSuccess !important;
+	border: solid 1px $success !important;
 }

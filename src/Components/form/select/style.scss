@@ -1,0 +1,26 @@
+@import "../../../theme/colors.scss";
+@import "../../../theme/varibles.scss";
+
+.select {
+	margin-left: $spacingSmall;
+	margin-bottom: 20px;
+	width: 100%;
+	display: block;
+}
+
+.select #label {
+	color: $title;
+	font-size: $fontBalaceTitle;
+	font-weight: bold;
+	margin-bottom: $spacingVerySmall;
+}
+
+.select .select-box {
+	width: 100%;
+}
+
+.select #error {
+	margin: $spacingVerySmall 0px 0px 0px;
+	font-size: $fontTitleTimeline;
+	color: $error;
+}

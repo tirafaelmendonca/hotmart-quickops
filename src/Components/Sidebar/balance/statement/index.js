@@ -2,7 +2,7 @@ import React from 'react';
 import { translate } from '$/locales';
 import formatCurrency from '$/utils/currency';
 import StatementItem from './statementItem';
-import './style.css';
+import './style.scss';
 
 const Statement = ({ data }) => {
 	return (

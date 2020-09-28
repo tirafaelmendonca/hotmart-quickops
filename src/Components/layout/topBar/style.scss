@@ -1,0 +1,10 @@
+@import "../../../theme/colors.scss";
+@import "../../../theme/varibles.scss";
+
+.topbar {
+	height: $topBarHeight;
+	background-color: $statusColorTitle;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 1$spacingSmall;
+}
